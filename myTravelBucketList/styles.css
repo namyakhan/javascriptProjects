@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Spinnaker&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Spinnaker", sans-serif;
+  background-color: black;
+
+  
+}
+
+h1 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+span {
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  /* width: 90vh; */
+  border-radius: 3rem;
+  color: #ffff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+  
+}
+
+.panel h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 5px;
+  margin: 1rem;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
