@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(251, 198, 206);
+}
+
+.container{
+    width: 450px;
+    background: white;
+    border-radius: 8px;
+}
+
+.container h2{
+    font-weight: 600;
+    font-size: 1.3rem; 
+    padding: 20px 25px /*1rem 1.75rem*/;
+    border-bottom: 1px solid #d4dbe5;
+}
+
+.wrapper{
+    margin: 20px 23px /*1.25rem 1.75rem*/;
+    
+}
+
+.input-box input{
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 0px 8px;
+    color: black;
+    letter-spacing: 1.2px;
+    background: none;
+}
+
+.input-box{
+    position: relative;
+}
+
+.input-box span{
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    cursor: pointer;
+    color: #707070;
+}
+
+
+.wrapper .pass-indicator{
+    position: relative; 
+    width: 100%;
+    height: 4px;
+    background-color: #dfdfdf;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+.pass-indicator::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 50%;
+    background: #f1c40b;
+    transition: width 0.3s ease;
+}
+
+.pass-indicator#weak::before{
+   width: 30%;
+   background: red; 
+}
+
+.pass-indicator#medium::before{
+    width: 70%;
+    background-color: rgb(239, 239, 68); 
+ }
+
+ .pass-indicator#strong::before{
+    width: 100%;
+    background-color: rgb(13, 187, 13); 
+ }
+
+.wrapper .pass-length{
+    margin: 20px 0px 20px 0px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pass-length input{
+    width: 100%;
+    height: 5px;
+    accent-color: lightpink;
+    cursor: pointer;
+}
+
+.pass-length input:hover{
+    accent-color: rgb(250, 140, 159);
+}
+
+.pass-settings .options{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.pass-settings .options .option{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: calc(100%/2);
+}
+
+.options .option:first-child{
+    pointer-events: none;
+}
+
+.options .option:first-child input{
+    opacity: 0.7;
+}
+
+.options .option input{
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+}
+
+.options .option label{
+    cursor: pointer;
+    padding-left: 8px;
+}
+
+.option input{
+    accent-color: lightpink;
+}
+
+.option input:active{
+    accent-color: lightpink;
+}
+
+.wrapper .generate-btn{
+    width: 100%;
+    font-size: 16px;
+    padding: 8px 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: lightpink;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    text-transform: uppercase;
+}
