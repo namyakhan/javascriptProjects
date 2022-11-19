@@ -1,0 +1,45 @@
+body {
+  background-color: #827397;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30vh;
+  margin-bottom: 20vh;
+}
+
+.active {
+  background-image: url("https://source.unsplash.com/random/150x150");
+  position: relative;
+  height: 150px;
+  width: 150px;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+}
+
+.hold {
+  border: solid 5px #b22727;
+}
+
+.inactive {
+  display: inline-block;
+  height: 160px;
+  width: 160px;
+  margin: 10px;
+  border: solid 5px #4d4c7d;
+  border-radius: 10px;
+  background: #e9d5ca;
+}
+
+.hovered {
+  background: #f4f4f4;
+  border: solid 5px #b22727;
+  border-style: dashed;
+}
+
+.invisible {
+  display: none;
+}

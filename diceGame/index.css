@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+html, body { 
+        --color-1: #a8e6cf;
+        --color-2: #dcedc1; 
+        --color-3: #ffd3b6; 
+        --color-4: #ffaaa5; 
+        --color-5: #ff8b94;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        padding-top: 50px;
+        background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+        font-family: 'Poppins', sans-serif;
+        height: 100vh;
+        color: black;
+    }
+    
+#message{
+        font-size: 40px;
+}
+
+    .container {
+        width: 400px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 50px;
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+    
+    .players {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .dice {
+        border-radius: 10px;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        font-size: 70px;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+    
+    
+    button {
+        color: black;
+        padding: 10px 20px;
+        font-size: 20px;
+        margin: 40px auto;
+        border: none;
+        font-family: 'Poppins', sans-serif;
+        cursor: pointer;
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+    
+   
+     */
+    button:focus {
+        outline: none;
+    }
+    
+    .active {
+        box-shadow: 0 8px 32px 0 rgba(202, 200, 200, 0.75);
+    }
