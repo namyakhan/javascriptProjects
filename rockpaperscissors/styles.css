@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+body {
+  font-family: "Press Start 2P", cursive;
+  background: url("https://images.unsplash.com/photo-1620641648331-d48c0439346a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1634&q=80")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #141010;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  margin: 5rem;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin: 5rem;
+}
+span {
+  color: #dc2f2f;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin: 5rem;
+  border-radius: 1rem;
+  font-family: "Press Start 2P", cursive;
+  color: #ffffff;
+  font-size: 20px;
+  background: #141010;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: white;
+  color: #141010;
+  text-decoration: none;
+}

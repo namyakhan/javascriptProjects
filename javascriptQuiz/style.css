@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #833ab4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fcb045,
+    #fd1d1d,
+    #833ab4
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fcb045,
+    #fd1d1d,
+    #833ab4
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.quiz-container {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(164, 166, 174, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 480px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.quiz-header {
+  padding: 4rem;
+}
+
+h2 {
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+button {
+  /* -webkit-border-radius: 5;
+  -moz-border-radius: 5; */
+
+  border: none;
+  cursor: pointer;
+  display: block;
+  font-family: inherit;
+  color: black;
+  font-size: 15px;
+  background: #ffff;
+  padding: 1.3rem;
+  width: 100%;
+}
+
+button:hover {
+  background: black;
+  color: white;
+}
+
+button:focus {
+  background-color: rgb(223, 227, 227);
+  color: black;
+}
