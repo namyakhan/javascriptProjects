@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Radio Canada', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #ffffff, #d6dedc);
+  /* background-color: #eef0f1; */
+}
+
+.calculator {
+  margin-top: 10px; 
+  background-color: #fafafa;
+  padding: 0 1.9rem 0;
+  position: absolute;
+  border-radius: 2rem;
+  box-shadow: 0 2rem 5rem rgb(0 0 0 / 25%);
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  height: 44rem;
+}
+
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 0.4rem;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 5rem);
+  grid-template-rows: minmax(120px, auto) repeat(6, 5rem);
+}
+
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  box-shadow: 5px 5px 5px;
+  border-radius: 2rem;
+  background-color: #3a3b3d;
+  color: #f2f3f5;
+}
+
+.span-two {
+  grid-row: span 2;
+}
+
+.output {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .previous-operand {
+  color: #d0ced2;
+  font-size: 1.2rem;
+}
+.output .current-operand {
+  color: #5a6770;
+  font-size: 3.3rem;
+}
+
+button.equals {
+  background: #972cee;
+}
+button.equals:hover {
+  background-color: #8020cf;
+}
+
+button.operators {
+  background-color: #dfd5e8;
+  color: #aa7fbc;
+}
+button.operators:hover {
+  background-color: #cab7db;
+  color: #8f65a1;
+}
+
+button.operators-2 {
+  background-color: #f4f0e4;
+  color: #c3ac7d;
+}
+button.operators-2:hover {
+  background-color: #e4dcc2;
+  color: #a99266;
+}
+
+button.clear {
+  background-color: #fdb82d;
+  color: #f2f3f5;
+}
+
+button.clear:hover {
+  background-color: #f68726;
+  color: #f2f3f5;
+}
+
+button.numbers {
+  background-color: #f3f4f6;
+  color: #a1a8ab;
+}
+button.numbers:hover {
+  background-color: whitesmoke;
+  color: #3a3b3d;
+}
+
+button.del {
+  background-color: #808183;
+  box-shadow: 1px 5px 5px;
+}
+button.del:hover {
+  background-color: #424347;
+  color: whitesmoke;
+}
