@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./images/logo.jpg" />
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IP Tracker</title>
+  <script src="./main.js" defer></script>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/lewaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+  <script src="https://kit.fontawesome.com/cffed4b148.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="warning">
+    <i class="fa-solid fa-circle-exclamation"></i> Please disable your ad blocker to use this app
+  </div>
+  <div id="header">
+    <div class="header__title">IP Address Tracker</div>
+    <div class="header__input"><input placeholder="Enter an IP address" type="float" class="header__input--input">
+      <button class="header__input--button" type="submit"><i class="fa-solid fa-arrow-down button-arrow"></i></button>
+    </div>
+  </div>
+  <div id="data">
+    <div class="section" id="ip">
+      <div class="section__title ip__title">IP Address</div>
+      <div class="section__value ip__value">-</div>
+    </div>
+    <div class="section" id="location">
+      <div class="section__title location__title">Location</div>
+      <div class="section__value location__value">-</div>
+    </div>
+    <div class="section" id="timezone">
+      <div class="section__title timezone__title">Timezone</div>
+      <div class="section__value timezone__value">-</div>
+    </div>
+    <div class="section" id="isp">
+      <div class="section__title isp__title">ISP</div>
+      <div class="section__value isp__value">-</div>
+    </div>
+    <div class="section" id="vpn">
+      <div class="section__title vpn__title">VPN/Proxy/Tor</div>
+      <div class="section__value vpn__value">-</div>
+    </div>
+  </div>
+  <div id="map"></div>
+</body>
+
+</html>
