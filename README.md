@@ -50,6 +50,6 @@ You will get a notification email once the changes have been merged. You're now 
 
 ## Contributors✨
 
-<a href = "https://github.com/Aman-Mandal/groovy/graphs/contributors">
+<a href = "https://github.com/namyakhan/javascriptProjects/graphs/contributors">
   <img src = "https://contrib.rocks/image?repo=namyakhan/javascriptProjects"/>
 </a>
