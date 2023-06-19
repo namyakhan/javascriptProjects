@@ -80,6 +80,8 @@ button {
   background: #ffff;
   padding: 1.3rem;
   width: 100%;
+  transition: background 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 button:hover {
@@ -90,4 +92,13 @@ button:hover {
 button:focus {
   background-color: rgb(223, 227, 227);
   color: black;
+}
+
+/* @media (min-width: 768px){
+
+} */
+input[type="radio"]{
+  height: 1.2rem;
+  width: 1.2rem;
+  margin-right: 0.5rem;
 }
