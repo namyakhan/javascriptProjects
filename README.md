@@ -44,7 +44,7 @@ Click on `Create a Pull Request` button on GitHub<br>
 
 ## Submit the PR🤩
 
-You will get a notification email once the changes have been merged. You're now part of the Open Source Community!🎉
+You will get a notification̦ once the changes have been merged. You're now part of the Open Source Community!🎉
 
 ### Don't forget to show some ❤️ by hitting ⭐️
 
